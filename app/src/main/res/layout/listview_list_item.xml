@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/keyword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="#북금곰 #빙하 #지구온난화"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#424242"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="북극곰의 눈물과 빙하"
+            android:textColor="#424242"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/video_button"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:background="#A9F5A9"
+            android:textColor="#424242"
+            android:text="시청하기"
+            android:textAlignment="center"
+            android:textSize="19sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

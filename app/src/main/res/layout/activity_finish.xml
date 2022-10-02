@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Climate Crisis Emotion"
+        android:textStyle="bold"
+        android:background="@drawable/img"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:gravity="center"/>
+
+    <ImageView
+        android:layout_marginTop="220dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/feedback_128x128"></ImageView>
+
+    <TextView
+        android:id="@+id/checkViewCountMent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="총 2편의 영상 시청을 완료하셨습니다."
+        android:textAlignment="center"
+        android:textColor="#424242"
+        android:textSize="17sp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/button_001"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:text="종료하기"
+        android:background="#A9F5A9"
+        android:textAlignment="center"
+        android:textSize="19sp"
+        android:onClick="btn"/>
+    </LinearLayout>
+</ScrollView>
