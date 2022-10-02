@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Climate Crisis Emotion"
+            android:textStyle="bold"
+            android:background="@drawable/img"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:gravity="center"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingTop="40dp">
+        <LinearLayout
+            android:id="@+id/login_form_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+           >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="이름"
+                android:textSize="25sp"/>
+            <EditText
+                android:id="@+id/login_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_name"
+                android:inputType="textPersonName"
+                android:selectAllOnFocus="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="학교"
+                android:textSize="25sp"
+                android:layout_marginTop="15dp"/>
+            <EditText
+                android:id="@+id/login_schoolname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_school"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionDone"
+                android:inputType="textPersonName"
+                android:selectAllOnFocus="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="반"
+                        android:textSize="25sp"
+                        android:layout_marginTop="15dp"/>
+                    <EditText
+                        android:id="@+id/login_classnum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_class"
+                        android:imeActionLabel="@string/action_sign_in_short"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPersonName"
+                        android:selectAllOnFocus="true" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="나이"
+                        android:textSize="25sp"
+                        android:layout_marginTop="15dp"/>
+                    <EditText
+                        android:id="@+id/login_age"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_age"
+                        android:imeActionLabel="@string/action_sign_in_short"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPersonName"
+                        android:selectAllOnFocus="true" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="성별"
+                    android:textSize="25sp"
+                    android:layout_marginTop="15dp"/>
+
+                <View
+                    android:id="@+id/gender_underLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/gender"
+                    android:background="#CCCCCC"/>
+                <RadioGroup
+                    android:id="@+id/login_radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/gender_underLine">
+
+                    <RadioButton
+                        android:id="@+id/radio_button_women"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="여자"
+                        android:layout_marginEnd="30dp"
+                        android:checked="true"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/radio_button_men"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="남자"/>
+                </RadioGroup>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/agreement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="이용 동의"
+                    android:textSize="25sp"
+                    android:layout_marginTop="15dp"/>
+                <View
+                    android:id="@+id/agreement_underLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/agreement"
+                    android:background="#CCCCCC"/>
+
+                <CheckBox android:id="@+id/checkbox_allAgree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="모두 동의"/>
+                <CheckBox android:id="@+id/checkbox_cheese1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="서비스 이용약관에 동의합니다."/>
+                <CheckBox android:id="@+id/checkbox_cheese2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="개인정보 취급방침에 동의합니다."/>
+                <CheckBox android:id="@+id/checkbox_cheese3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="고유 식별 정보 처리에 동의합니다."/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/login_registration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="@string/action_sign_in"
+                android:background="#A9F5A9"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

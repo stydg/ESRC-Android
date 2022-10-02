@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Climate Crisis Emotion"
+            android:textStyle="bold"
+            android:background="@drawable/img"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
+                    android:paddingBottom="20dp">
+                    <TextView
+                        android:id="@+id/agreement"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" 영상을 보고 느낀 감정 키워드 4개를 골라주세요."
+                        android:textSize="25sp"
+                        android:textAlignment="center"
+                        android:paddingRight="20dp"
+                        android:paddingLeft="20dp"
+                        android:paddingBottom="15dp"/>
+                    <View
+                        android:id="@+id/agreement_underLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/agreement"
+                        android:background="#CCCCCC"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:paddingRight="40dp"
+                    android:paddingLeft="40dp">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+                        <CheckBox android:id="@+id/checkbox_cheese1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="당황스럽다"/>
+                        <CheckBox android:id="@+id/checkbox_cheese2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="희망적이다"/>
+                        <CheckBox android:id="@+id/checkbox_cheese3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="먹먹하다"/>
+                        <CheckBox android:id="@+id/checkbox_cheese4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="당황스럽다"/>
+                        <CheckBox android:id="@+id/checkbox_cheese5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="희망적이다"/>
+                        <CheckBox android:id="@+id/checkbox_cheese6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="먹먹하다"/>
+                        <CheckBox android:id="@+id/checkbox_cheese7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="당황스럽다"/>
+                        <CheckBox android:id="@+id/checkbox_cheese8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="희망적이다"/>
+                        <CheckBox android:id="@+id/checkbox_cheese9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="먹먹하다"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <CheckBox android:id="@+id/checkbox_cheese10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="당황스럽다"/>
+                        <CheckBox android:id="@+id/checkbox_cheese11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="희망적이다"/>
+                        <CheckBox android:id="@+id/checkbox_cheese12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="먹먹하다"/>
+                        <CheckBox android:id="@+id/checkbox_cheese13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="당황스럽다"/>
+                        <CheckBox android:id="@+id/checkbox_cheese14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="희망적이다"/>
+                        <CheckBox android:id="@+id/checkbox_cheese15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="먹먹하다"/>
+                        <CheckBox android:id="@+id/checkbox_cheese16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="당황스럽다"/>
+                        <CheckBox android:id="@+id/checkbox_cheese17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="희망적이다"/>
+                        <CheckBox android:id="@+id/checkbox_cheese18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="먹먹하다"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/action_next_step"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="40dp"
+                android:background="#A9F5A9"/>
+        </LinearLayout>
+</LinearLayout>

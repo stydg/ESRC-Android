@@ -20,7 +20,7 @@ public class SplashActivity  extends AppCompatActivity {
     public void goMap(){
         TimerTask goGeo = new TimerTask(){
             public void run(){
-                Intent intent = new Intent(SplashActivity.this, ListViewActivity.class);
+                Intent intent = new Intent(SplashActivity.this, loginActivity.class);
                 startActivity(intent);
                 finish();
             }
